@@ -1,4 +1,4 @@
-# newsapp
+# NEX
 
 > A Vue.js project
 
