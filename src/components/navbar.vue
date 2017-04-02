@@ -234,13 +234,11 @@
          this.$http.get('https://newsapi.org/v1/articles?source=the-verge&sortBy=latest&apiKey=8f1d31cb271f4c939e6e7550b46bc4e3').then(response =>{
             this.articles = response.data.articles;
           });
-         alert("article");
       }
     },
     created(){
       this.$http.get('https://newsapi.org/v1/sources?language=en').then(response =>{
         this.sources=response.data.sources;
-        alert("sources");
       }),
          this.fetchArticles();
     }
