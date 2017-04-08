@@ -2,6 +2,8 @@
 
 > A Vue.js project
 
+Nex is the open source news delivery plateform which will provide you all news updates from diffrent news sources.
+
 ## Build Setup
 
 ``` bash
