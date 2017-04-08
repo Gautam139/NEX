@@ -10,9 +10,13 @@
 			        is licensed <a href="#">Ver 1.0</a>.
 			      </p>
 			      <p>
-			        <a class="icon" href="#">
+			        <a class="icon" href="https://github.com/Gautam139/NEX" target="_blank">
 			          <i class="fa fa-github"></i>
+			        </a>
+			        <a class="icon" href="#">
 			          <i class="fa fa-facebook"></i>
+			        </a>
+			        <a class="icon" href="#">
 			          <i class="fa fa-twitter"></i>
 			        </a>
 			      </p>

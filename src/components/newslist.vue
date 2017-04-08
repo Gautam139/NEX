@@ -20,14 +20,14 @@
             <div  class="card">
               <div class="card-image">
                 <figure class="image is-4by3">
-                <img :src="article.urlToImage" alt="Image">
+                 <img :src="article.urlToImage" alt="Image">
                 </figure>
               </div>
               <div class="card-content">
                   <div class="media">
                     <div class="media-left">
                       <figure class="image is-48x48">
-                      <img :src="source.urlsToLogos.large" alt="Image">
+                        <img :src="source.urlsToLogos.large" alt="Image">
                       </figure>
                     </div>
                     <div class="media-content">
@@ -70,6 +70,7 @@
 
     name:'newslist',
     props:['source'],
+    
 
     data(){
       return{
@@ -78,7 +79,10 @@
     },
     methods:{
         updateSource(source){
-          if(source){
+          if(!source){
+            this.articles=''
+          }
+          else{
             this.$http.get('https://newsapi.org/v1/articles?source='+ source.id +'&apiKey=8f1d31cb271f4c939e6e7550b46bc4e3').then(response =>{
               this.articles = response.data.articles;
             });
@@ -117,10 +121,14 @@
     bottom:-150%;
     opacity: 0;
 }
+.column{
+  overflow: hidden;
+}
 .columns{
   flex-wrap: wrap;
 }
 .card{
+  position: relative;
   overflow: hidden;
   box-shadow: 2px 4px 10px 3px rgba(0,0,0,0.2);
 }
@@ -136,6 +144,10 @@
   left:70%;
   animation: slide 5s 2s 3 ease-in-out;
 }
+.description{
+  background-color: #fff;
+}
+
 @keyframes slide{
   from{
     left:10%;

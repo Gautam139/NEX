@@ -22,7 +22,7 @@
 </script>
 <style scoped>
 	#home {
-	background: url('../assets/news2.jpg') no-repeat center center;
+	background: url('../assets/news1.jpg') no-repeat center center;
 	background-attachment: fixed;
 	background-size: cover;
 	position: relative;
@@ -30,7 +30,7 @@
 }
 #home:before {
 	content: "";
-	background-color: rgba(26, 30, 35, 0.55);
+	background-color: rgba(30, 35, 40, 0.5);
 	position: absolute;
 	top: 0;
 	left: 0;
